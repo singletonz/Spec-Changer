@@ -12,32 +12,31 @@ Created on Thu Jun 02 07:04:05 2020
 import os
 import subprocess
 
-value = input("Enter value to replace: \n")
-value1 = input("Enter value: \n")
+value = input("Enter file name: \n")
+#value1 = input("Enter value: \n")
 
-
+#spec input
+spec1 = input("Enter spec to change: \n")
+spec2 = input("Enter value: \n")
 
 
 #read input file
-fin = open("urban_plume.spec", "rt")
-
-#read file contents to string
+fin = open(value, "rt")
 data = fin.read()
 
-#replace all occurrences of the required string
-data = data.replace(value, value1)
+data = data.replace(spec1, spec2)
 
 #close the input file
 fin.close()
 
 #open the input file in write mode
-fin = open("urban_plume.spec", "wt")
+fout = open(value, "wt")
 
 #overrite the input file with the resulting data
-fin.write(data)
+fout.write(data)
 
 #close the file
-fin.close()
+fout.close()
 
 subprocess.call(['./test.sh'])
 
