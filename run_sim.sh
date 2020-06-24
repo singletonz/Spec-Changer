@@ -9,10 +9,10 @@ set -e
 set -v
 
 #process
-sh ./1_run.sh
-echo "Script ran"
-sh ./2_process.sh
-echo "Script ran"
-sh ./3_plot.sh
-echo "Script ran"
+( "/home/midnight/Documents/partmc-2.5.0/scenarios/4_chamber/1_run.sh" )
+echo "Script one finished!"
+( "/home/midnight/Documents/partmc-2.5.0/scenarios/4_chamber/2_process.sh" )
+echo "Script two finsihed!"
+( "/home/midnight/Documents/partmc-2.5.0/scenarios/4_chamber/3_plot.sh" )
+echo "Script three finished!"
 
