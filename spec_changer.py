@@ -1,3 +1,4 @@
+  GNU nano 4.9.3                                                                 spec_changer.py                                                                           
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 """
@@ -20,15 +21,15 @@ import sys
 #    sys.exit()
 
 while True:
-   answer = input('Check directory contents? "y" to run, "n" to cancel, "c" to continue')
+   answer = input('Check directory contents? "y" to run, "n" to cancel, "c" to continue: ')
    if answer.lower().startswith("y"):
-      subprocess.call(['./test.sh'])
+      subprocess.call(['./dir_look.sh'])
    elif answer.lower().startswith("n"):
       sys.exit()
    elif answer.lower().startswith("c"):
        break
-       
-       
+
+
 value = input("Enter file to modify: \n")
 #value1 = input("Enter value: \n")
 
@@ -56,4 +57,4 @@ fout.write(data)
 fout.close()
 print("End of job")
 
-#subprocess.call(['./test.sh'])
+subprocess.call(['./run_sim.sh'])
