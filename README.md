@@ -7,5 +7,5 @@ A simple test build. Work is still very much in progress.
 ## Running
 The spec_changer.py file is meant to prompt various inputs to assist the user in modifying simple varables within a file of the users choice. In this case, a .spec file within the partmc-mosaic test scenarios.
 
-Once ran, it will call upon the simulation script which will build a new simultaion instance for testing.
+Additionally, if you wish to skip the input value portion, you can simply run the run_sim script to build.
 
