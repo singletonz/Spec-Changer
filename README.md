@@ -1,6 +1,6 @@
 # Spec-Changer
 
-A simple test build and work stil in progress.
+A simple test build.
 
 ### NOTE: This package is not intended to directly replace any scripts that currently reside within the partmc-mosaic simulation. This package includes two files for changing specific parameters within the partmc-mosiac suite, subsequently building a new simulation to compare to the original.
 
