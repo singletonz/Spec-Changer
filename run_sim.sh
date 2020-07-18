@@ -8,7 +8,9 @@ set -e
 #turn on command echoing
 set -v
 
-#process
+#process information
+#Set your respective filepath here to run scripts
+
 ( "/home/midnight/Documents/partmc-2.5.0/scenarios/4_chamber/1_run.sh" )
 echo "Script one finished!"
 ( "/home/midnight/Documents/partmc-2.5.0/scenarios/4_chamber/2_process.sh" )
